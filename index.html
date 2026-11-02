@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagannath Behera | SDE-1 & Test Automation Engineer</title>
+    <meta name="description" content="Portfolio of Jagannath Behera - SDE-1 at Truminds Software Systems, NIT Rourkela graduate. Specializing in Backend Development (Flask, Python, MongoDB) and Automated Testing (Playwright, Cypress, Pytest, CI/CD).">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            950: '#06080e',
+                            900: '#0a0e17',
+                            800: '#0f172a',
+                            700: '#1e293b'
+                        },
+                        cyber: {
+                            cyan: '#00f0ff',
+                            emerald: '#10b981',
+                            purple: '#a855f7',
+                            amber: '#f59e0b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#06080e] text-slate-200 antialiased selection:bg-cyan-500/30 selection:text-cyan-200 relative overflow-x-hidden">
+
+    <!-- Interactive Mouse Glow Aura -->
+    <div id="cursor-aura" class="hidden md:block"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="fixed top-0 left-0 right-0 h-[3px] bg-transparent z-50">
+        <div id="scroll-progress" class="h-full bg-gradient-to-r from-cyan-400 via-emerald-400 to-purple-500 w-0 transition-all duration-75"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-[#06080e]/80 backdrop-blur-md border-b border-white/5 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand / Logo -->
+            <a href="#hero" class="flex items-center gap-2.5 group">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400/20 to-purple-600/30 border border-cyan-500/40 flex items-center justify-center font-mono font-bold text-cyan-300 text-sm shadow-[0_0_15px_rgba(0,240,255,0.2)] group-hover:scale-105 transition-transform">
+                    JB
+                </div>
+                <div>
+                    <span class="font-bold text-sm tracking-tight text-white group-hover:text-cyan-300 transition-colors">Jagannath Behera</span>
+                    <span class="block text-[10px] font-mono text-emerald-400">SDET-II @ Akamai</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-7 text-xs font-mono">
+                <a href="#about" class="nav-link text-slate-400 hover:text-cyan-300 transition-colors">./about</a>
+                <a href="#experience" class="nav-link text-slate-400 hover:text-cyan-300 transition-colors">./experience</a>
+                <a href="#automation-lab" class="nav-link text-slate-400 hover:text-cyan-300 transition-colors">./automation-lab</a>
+                <a href="#terminal" class="nav-link text-slate-400 hover:text-cyan-300 transition-colors">./terminal</a>
+                <a href="#projects" class="nav-link text-slate-400 hover:text-cyan-300 transition-colors">./projects</a>
+                <a href="#skills" class="nav-link text-slate-400 hover:text-cyan-300 transition-colors">./skills</a>
+                <a href="#contact" class="nav-link text-slate-400 hover:text-cyan-300 transition-colors">./contact</a>
+            </nav>
+
+            <!-- Quick Controls -->
+            <div class="flex items-center gap-3">
+                <!-- Sound Toggle -->
+                <button id="sound-toggle-btn" title="Toggle UI Audio Effects" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-300 hover:border-cyan-500/30 transition-all text-xs font-mono">
+                    <span id="sound-icon">🔇</span>
+                    <span id="sound-status" class="hidden sm:inline text-[11px]">Muted</span>
+                </button>
+
+                <!-- Resume Download Action -->
+                <a href="mailto:jagannathbehera312@gmail.com?subject=Interview%20Request%20-%20Jagannath%20Behera" class="btn-neon-cyan px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold flex items-center gap-1.5 shadow-sm">
+                    <span>⚡</span> <span>Get in Touch</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="relative z-10 pt-16">
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="relative min-h-[92vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 bg-cyber-grid radial-glow-cyan overflow-hidden">
+            <!-- Canvas Particle Network -->
+            <canvas id="hero-canvas" class="absolute inset-0 w-full h-full pointer-events-auto opacity-75"></canvas>
+
+            <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center">
+                
+                <!-- Status Pill -->
+                <div class="inline-flex items-center gap-2.5 px-3.5 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs font-mono mb-6 backdrop-blur-md shadow-[0_0_20px_rgba(16,185,129,0.15)] animate-float">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 live-status-dot"></span>
+                    <span>ACTIVE SDET-II @ AKAMAI TECHNOLOGIES • 3.2+ YRS EXPERIENCE</span>
+                </div>
+
+                <!-- Main Hero Name Heading -->
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-4">
+                    Hi, I'm <span class="text-gradient-cyan">Jagannath Behera</span>
+                </h1>
+
+                <!-- Dynamic Typing Role -->
+                <div class="h-9 sm:h-11 flex items-center justify-center font-mono text-lg sm:text-2xl md:text-3xl text-slate-300 font-semibold mb-6">
+                    <span class="text-cyan-400 mr-2">&gt;</span>
+                    <span id="typing-role" class="text-emerald-300"></span>
+                    <span class="inline-block w-2.5 h-6 bg-cyan-400 ml-1 animate-pulse"></span>
+                </div>
+
+                <!-- Bio summary -->
+                <p class="max-w-2xl text-slate-400 text-sm sm:text-base leading-relaxed mb-10">
+                    B.Tech in Computer Science from <strong class="text-slate-200">NIT Rourkela</strong>. Currently <strong class="text-cyan-300">SDET-II at Akamai Technologies</strong> (Ex-SDE-1 at <strong class="text-slate-200">Truminds</strong>) with <strong class="text-emerald-400">3.2+ years of total experience</strong>. Specializing in edge server infrastructure, networking protocols (TCP/IP, HTTP/2, DNS), internal automation tools, Python & Pytest scripting, Perforce/Git, and scalable microservices.
+                </p>
+
+                <!-- Hero CTA Buttons -->
+                <div class="flex flex-wrap items-center justify-center gap-4 mb-14">
+                    <a href="#automation-lab" class="btn-neon-emerald px-5 py-3 rounded-xl font-mono text-xs sm:text-sm font-semibold flex items-center gap-2">
+                        <span>▶</span> <span>Run Akamai & Pytest Suite</span>
+                    </a>
+                    <a href="#terminal" class="btn-neon-cyan px-5 py-3 rounded-xl font-mono text-xs sm:text-sm font-semibold flex items-center gap-2">
+                        <span>💻</span> <span>Launch Interactive Terminal</span>
+                    </a>
+                    <a href="#experience" class="px-5 py-3 rounded-xl font-mono text-xs sm:text-sm font-semibold bg-slate-900/80 border border-slate-700/80 text-slate-300 hover:text-white hover:border-slate-500 transition-all flex items-center gap-2">
+                        <span>💼</span> <span>View Career Journey</span>
+                    </a>
+                </div>
+
+                <!-- Quick Stats Strip -->
+                <div id="stats-strip" class="w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="glass-panel p-4 rounded-xl border border-white/5">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400 font-mono stat-counter" data-target="3.2" data-suffix="+" data-decimals="1">0</div>
+                        <div class="text-xs text-slate-400 font-mono mt-1">Years Total Experience</div>
+                    </div>
+                    <div class="glass-panel p-4 rounded-xl border border-white/5">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono stat-counter" data-target="10" data-suffix="K+" data-decimals="0">0</div>
+                        <div class="text-xs text-slate-400 font-mono mt-1">Daily API Requests</div>
+                    </div>
+                    <div class="glass-panel p-4 rounded-xl border border-white/5">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-purple-400 font-mono stat-counter" data-target="30" data-suffix="%" data-decimals="0">0</div>
+                        <div class="text-xs text-slate-400 font-mono mt-1">Latency Reduction</div>
+                    </div>
+                    <div class="glass-panel p-4 rounded-xl border border-white/5">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono stat-counter" data-target="95" data-suffix="%+" data-decimals="0">0</div>
+                        <div class="text-xs text-slate-400 font-mono mt-1">Automated Test Coverage</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT & KEY ATTRIBUTES SECTION -->
+        <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="text-center mb-14">
+                <span class="text-cyan-400 font-mono text-xs uppercase tracking-widest">[ 01. CORE PROFILE ]</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Engineer at the Intersection of Backend & QA Automation</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-emerald-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1: Edge Infrastructure & Networking -->
+                <div class="glass-panel p-6 rounded-2xl tilt-card border border-white/5 hover:border-cyan-500/30">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/40 text-cyan-400 flex items-center justify-center text-xl mb-4">
+                        🌐
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Edge Servers & Networking</h3>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed mb-4">
+                        SDET-II at Akamai Technologies validating distributed edge server infrastructure, network routing, and protocol reliability (TCP/IP, HTTP/2, DNS). Built internal automation tools and diagnostic utilities.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-cyan-300">Akamai Edge</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-cyan-300">Networking</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-cyan-300">TCP/IP</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-cyan-300">Perforce</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Test Automation & SDET -->
+                <div class="glass-panel p-6 rounded-2xl tilt-card border border-white/5 hover:border-emerald-500/30">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        🛡️
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Pytest & Test Automation</h3>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed mb-4">
+                        Advanced Python scripting for scalable Pytest & Playwright test suites. Engineered keyword-driven frameworks, automated regression pipelines, and API validation with 95%+ coverage.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-emerald-300">Pytest</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-emerald-300">Python Scripting</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-emerald-300">Playwright</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-emerald-300">Internal Tools</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: DevOps & Backend Systems -->
+                <div class="glass-panel p-6 rounded-2xl tilt-card border border-white/5 hover:border-purple-500/30">
+                    <div class="w-12 h-12 rounded-xl bg-purple-950/60 border border-purple-500/40 text-purple-400 flex items-center justify-center text-xl mb-4">
+                        🚀
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Backend & CI/CD Tooling</h3>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed mb-4">
+                        Handled 10K+ daily requests on Flask endpoints with MongoDB & Elasticsearch. Version control across Perforce (P4) and Git, with automated Jenkins pipelines and Docker containerization.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-purple-300">Flask</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-purple-300">Perforce / Git</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-purple-300">Docker</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-purple-300">Jenkins</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AUTOMATION LAB SECTION (Interactive Live Runner) -->
+        <section id="automation-lab" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-emerald-400 font-mono text-xs uppercase tracking-widest">[ 02. INTERACTIVE AUTOMATION LAB ]</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Live Akamai Edge, Pytest & Automation Visualizer</h2>
+                <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto mt-2">
+                    Experience my test engineering in action. Click below to trigger live executions validating Akamai edge servers, network latency, backend APIs, and SonarQube quality gates.
+                </p>
+            </div>
+
+            <!-- Test Runner Card -->
+            <div class="glass-panel rounded-2xl border border-emerald-500/30 p-6 shadow-2xl relative overflow-hidden">
+                <!-- Header Toolbar -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-800">
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+                        </div>
+                        <span class="font-mono text-xs text-slate-400">Akamai Edge Suite • Pytest v8.1 • Python Scripting • Playwright</span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <button id="run-suite-btn" class="btn-neon-emerald px-4 py-2 rounded-xl text-xs font-mono font-bold flex items-center gap-2">
+                            <span>▶</span> <span>Run Automation Suite</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Live Progress Bar -->
+                <div class="my-5">
+                    <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1.5">
+                        <span id="test-progress-text">Ready to execute test suite</span>
+                        <span id="test-time-elapsed">Total Time: <strong id="tests-total-time" class="text-emerald-400">0ms</strong></span>
+                    </div>
+                    <div class="w-full h-2 rounded-full bg-slate-900 border border-slate-800 overflow-hidden">
+                        <div id="test-progress-bar" class="h-full bg-gradient-to-r from-cyan-400 via-emerald-400 to-green-400 transition-all duration-300 w-0"></div>
+                    </div>
+                </div>
+
+                <!-- Test Cases Table -->
+                <div id="test-suite-container" class="space-y-2 mb-4">
+                    <!-- Populated dynamically by test-runner.js -->
+                </div>
+
+                <!-- Console Stream Box -->
+                <div class="p-3 rounded-xl bg-black/60 border border-slate-800 font-mono text-xs text-slate-300">
+                    <div class="text-slate-500 text-[11px] mb-1">Execution Stream Log:</div>
+                    <div id="test-live-log" class="text-cyan-300 truncate">
+                        Press "Run Automation Suite" above to launch chromium workers and execute assertions.
+                    </div>
+                </div>
+
+                <!-- Metrics Footer -->
+                <div class="mt-4 pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between text-xs font-mono text-slate-400">
+                    <div class="flex items-center gap-4">
+                        <span>Suites Passed: <strong id="tests-passed-count" class="text-emerald-400 font-bold">0</strong> / <span id="tests-total-count">5</span></span>
+                        <span>Zero Flakiness Architecture</span>
+                    </div>
+                    <div class="text-slate-500">
+                        Integrated with Jenkins CI & SonarQube
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE DEVOPS TERMINAL -->
+        <section id="terminal" class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-cyan-400 font-mono text-xs uppercase tracking-widest">[ 03. INTERACTIVE SHELL ]</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">DevOps & Terminal Emulator</h2>
+                <p class="text-slate-400 text-xs sm:text-sm max-w-lg mx-auto mt-2">
+                    Type commands in the interactive bash terminal below. Try typing <span class="text-cyan-300 font-mono font-semibold">help</span>, <span class="text-emerald-300 font-mono font-semibold">skills</span>, <span class="text-purple-300 font-mono font-semibold">test</span>, or <span class="text-amber-300 font-mono font-semibold">sudo hire</span>.
+                </p>
+            </div>
+
+            <div class="terminal-window rounded-2xl terminal-scanlines shadow-2xl">
+                <!-- Terminal Header Bar -->
+                <div class="bg-slate-900/90 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                        <span class="font-mono text-xs text-slate-400 ml-2">jagan@portfolio:~ (bash)</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-mono text-slate-500">
+                        <span>UTF-8</span>
+                        <span>•</span>
+                        <span>Tab auto-complete</span>
+                    </div>
+                </div>
+
+                <!-- Terminal Output & Body -->
+                <div class="p-5 h-[340px] overflow-y-auto space-y-2 text-xs font-mono" id="terminal-body-container">
+                    <div class="text-slate-400 mb-3 leading-relaxed">
+                        <span class="text-cyan-400 font-bold">Welcome to Jagannath Behera's CLI Environment v2.4.</span><br>
+                        Type <button type="button" onclick="window.terminalInstance.quickExec('help')" class="text-emerald-400 font-semibold underline">help</button> to see list of commands, or click shortcuts:
+                        <span class="inline-flex flex-wrap gap-2 mt-2">
+                            <button type="button" onclick="window.terminalInstance.quickExec('about')" class="px-2 py-0.5 rounded bg-slate-800 text-cyan-300 border border-slate-700 hover:border-cyan-400">about</button>
+                            <button type="button" onclick="window.terminalInstance.quickExec('skills')" class="px-2 py-0.5 rounded bg-slate-800 text-emerald-300 border border-slate-700 hover:border-emerald-400">skills</button>
+                            <button type="button" onclick="window.terminalInstance.quickExec('experience')" class="px-2 py-0.5 rounded bg-slate-800 text-purple-300 border border-slate-700 hover:border-purple-400">experience</button>
+                            <button type="button" onclick="window.terminalInstance.quickExec('projects')" class="px-2 py-0.5 rounded bg-slate-800 text-amber-300 border border-slate-700 hover:border-amber-400">projects</button>
+                            <button type="button" onclick="window.terminalInstance.quickExec('sudo hire')" class="px-2 py-0.5 rounded bg-rose-950/60 text-rose-300 border border-rose-700/50 hover:border-rose-400">sudo hire</button>
+                        </span>
+                    </div>
+                    <div id="terminal-body"></div>
+                </div>
+
+                <!-- Terminal Input Form -->
+                <form id="terminal-form" class="bg-slate-950 px-4 py-3 border-t border-slate-800 flex items-center gap-2">
+                    <span class="text-emerald-400 font-mono font-bold text-xs sm:text-sm">jagan@portfolio:~$</span>
+                    <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="type 'help' or command..." class="flex-1 bg-transparent border-none outline-none font-mono text-xs sm:text-sm text-cyan-200 placeholder:text-slate-600">
+                    <button type="submit" class="text-slate-400 hover:text-cyan-400 text-xs font-mono px-2 py-1 rounded bg-slate-900 border border-slate-800">
+                        Enter ↵
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-cyan-400 font-mono text-xs uppercase tracking-widest">[ 04. CAREER JOURNEY ]</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Work Experience & Track Record</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-emerald-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative pl-6 sm:pl-10 space-y-12">
+                <div class="timeline-stem"></div>
+
+                <!-- Job 1: SDET-II @ Akamai Technologies -->
+                <div class="relative group">
+                    <!-- Glowing Node -->
+                    <div class="absolute -left-[30px] sm:-left-[46px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-cyan-400 flex items-center justify-center shadow-[0_0_12px_rgba(0,240,255,0.8)]">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                    </div>
+
+                    <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-cyan-500/40 hover:border-cyan-400 transition-all">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                                    SDET-II <span class="text-slate-400 font-normal">at</span> <span class="text-cyan-400">Akamai Technologies</span>
+                                </h3>
+                                <p class="text-xs font-mono text-slate-400">Bangalore, India • Full-time</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-mono bg-cyan-950/70 text-cyan-300 border border-cyan-500/40 w-fit">
+                                Aug 2026 – Present (Current)
+                            </span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-cyan-400 mt-1">▸</span>
+                                <span>Engineered automated test architectures and infrastructure validation suites utilizing <strong>Python scripting and Pytest</strong> across high-throughput distributed edge servers.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-cyan-400 mt-1">▸</span>
+                                <span>Conducted comprehensive networking protocol validation covering <strong>TCP/IP, HTTP/2, DNS resolution, proxy routing</strong>, and edge cache distribution reliability.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-cyan-400 mt-1">▸</span>
+                                <span>Managed mission-critical enterprise repositories and complex multi-stream branch integrations employing <strong>Perforce (P4) and Git</strong> version control workflows.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-cyan-400 mt-1">▸</span>
+                                <span>Developed and maintained <strong>custom internal tooling</strong> for server telemetry collection, automated log parsing, and diagnostic reporting to streamline QA triage cycles.</span>
+                            </li>
+                        </ul>
+
+                        <div class="flex flex-wrap gap-2 font-mono text-xs">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-cyan-300">Python Scripting</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-cyan-300">Pytest</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-cyan-300">Perforce (P4)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-cyan-300">Git</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-cyan-300">Edge Servers</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-cyan-300">Networking (TCP/IP, DNS)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-cyan-300">Internal Tools</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 2: SDE-1 @ Truminds -->
+                <div class="relative group">
+                    <div class="absolute -left-[30px] sm:-left-[46px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-emerald-400 flex items-center justify-center shadow-[0_0_12px_rgba(16,185,129,0.5)]">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    </div>
+
+                    <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-emerald-300 transition-colors">
+                                    SDE-1 <span class="text-slate-400 font-normal">at</span> <span class="text-emerald-400">Truminds Software Systems</span>
+                                </h3>
+                                <p class="text-xs font-mono text-slate-400">Bangalore, India • Full-time</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/70 text-emerald-300 border border-emerald-500/40 w-fit">
+                                Aug 2023 – Aug 2026 (3.0 yrs)
+                            </span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-400 mt-1">▸</span>
+                                <span>Designed and executed automated API and UI tests using <strong>white-box and black-box techniques</strong>, ensuring comprehensive coverage of functional workflows across complex distributed environments.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-400 mt-1">▸</span>
+                                <span>Architected scalable <strong>Playwright automation frameworks</strong> leveraging keyword-driven test design, accelerating release regression cycles and eliminating test flakiness.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-400 mt-1">▸</span>
+                                <span>Engineered secure <strong>Flask endpoints with MongoDB</strong>, successfully handling <strong>10,000+ daily requests</strong>; integrated SonarQube & Elasticsearch, improving code quality by <strong>25%</strong> and query latency by <strong>30%</strong>.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-400 mt-1">▸</span>
+                                <span>Streamlined <strong>CI/CD pipelines with Jenkins scripting</strong>, authored detailed test specifications, and collaborated in Agile squads to rapidly troubleshoot and patch system defects.</span>
+                            </li>
+                        </ul>
+
+                        <div class="flex flex-wrap gap-2 font-mono text-xs">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Playwright</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Python / Flask</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">MongoDB</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Elasticsearch</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Jenkins CI/CD</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">SonarQube</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 2: SDE Intern @ Truminds -->
+                <div class="relative group">
+                    <div class="absolute -left-[30px] sm:-left-[46px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-emerald-400 flex items-center justify-center shadow-[0_0_12px_rgba(16,185,129,0.5)]">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    </div>
+
+                    <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-emerald-300 transition-colors">
+                                    SDE Intern <span class="text-slate-400 font-normal">at</span> <span class="text-emerald-400">Truminds Software Systems</span>
+                                </h3>
+                                <p class="text-xs font-mono text-slate-400">Gurgaon, India • Internship</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/70 text-emerald-300 border border-emerald-500/40 w-fit">
+                                Mar 2023 – June 2023
+                            </span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-400 mt-1">▸</span>
+                                <span>Leveraged the <strong>Cypress framework</strong> to automate the web user interfaces (UI) of multiple web applications, streamlining testing workflows and increasing overall test efficiency by <strong>30%</strong>.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-400 mt-1">▸</span>
+                                <span>Conducted comprehensive automated API testing utilizing <strong>Pytest and Unittest frameworks</strong>, paired with Postman for collection assertion, achieving <strong>95% accuracy and coverage</strong>.</span>
+                            </li>
+                        </ul>
+
+                        <div class="flex flex-wrap gap-2 font-mono text-xs">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Cypress</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Pytest</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Postman</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Unittest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 3: Back-end Web Developer @ Rajat Agrawal Creators -->
+                <div class="relative group">
+                    <div class="absolute -left-[30px] sm:-left-[46px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-amber-400 flex items-center justify-center shadow-[0_0_12px_rgba(245,158,11,0.5)]">
+                        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                    </div>
+
+                    <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-amber-500/40 transition-all">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-amber-300 transition-colors">
+                                    Back-end Web Developer <span class="text-slate-400 font-normal">at</span> <span class="text-amber-400">Rajat Agrawal Creators</span>
+                                </h3>
+                                <p class="text-xs font-mono text-slate-400">Remote • Project Internship</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-mono bg-amber-950/70 text-amber-300 border border-amber-500/40 w-fit">
+                                Sept 2021 – Nov 2021
+                            </span>
+                        </div>
+
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed mb-5">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-amber-400 mt-1">▸</span>
+                                <span>Engineered back-end business logic and authentication features using <strong>PHP and MySQL</strong>, optimizing user onboarding and driving a <strong>20% surge in user sign-ups</strong>.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-amber-400 mt-1">▸</span>
+                                <span>Designed a normalized, high-performance database schema with structured indexing, unlocking a <strong>40% speedup in query retrieval times</strong> while guaranteeing referential data integrity.</span>
+                            </li>
+                        </ul>
+
+                        <div class="flex flex-wrap gap-2 font-mono text-xs">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">PHP</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">MySQL</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Schema Design</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Authentication</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS SECTION -->
+        <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-cyan-400 font-mono text-xs uppercase tracking-widest">[ 05. PORTFOLIO WORK ]</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Engineered Systems & Featured Projects</h2>
+                <p class="text-slate-400 text-xs sm:text-sm max-w-lg mx-auto mt-2">
+                    Production systems, security tooling, and automation architectures built with scalable standards.
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-10 font-mono text-xs">
+                <button class="filter-btn px-4 py-2 rounded-xl border bg-cyan-500/20 text-cyan-300 border-cyan-500/40 transition-all" data-filter="all">All Projects (4)</button>
+                <button class="filter-btn px-4 py-2 rounded-xl border bg-slate-900/60 text-slate-400 border-slate-800 hover:text-white transition-all" data-filter="backend">Backend & Security</button>
+                <button class="filter-btn px-4 py-2 rounded-xl border bg-slate-900/60 text-slate-400 border-slate-800 hover:text-white transition-all" data-filter="automation">QA Automation</button>
+                <button class="filter-btn px-4 py-2 rounded-xl border bg-slate-900/60 text-slate-400 border-slate-800 hover:text-white transition-all" data-filter="mobile">Mobile Systems</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Project 1: Vulnerability Scanner -->
+                <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between tilt-card border border-white/5 hover:border-cyan-500/40" data-category="backend security">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-rose-950/60 text-rose-300 border border-rose-500/30">
+                                🛡️ Security / DevOps
+                            </span>
+                            <div class="flex items-center gap-2">
+                                <a href="https://github.com/jagannathbehera312" target="_blank" title="GitHub Source" class="p-2 rounded-lg bg-slate-900 text-slate-400 hover:text-cyan-300 transition-colors">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-2">Automated Vulnerability Scanner</h3>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                            Built an automated port & network vulnerability scanner using Python Flask and MongoDB. Containerized with Docker for reproducible VPS staging and integrated Jenkins CI/CD for continuous protocol validation.
+                        </p>
+
+                        <!-- Key Metrics Ribbon -->
+                        <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-slate-900/80 border border-slate-800/80 mb-4 text-xs font-mono">
+                            <div>
+                                <span class="text-slate-500 block">Vulnerabilities:</span>
+                                <span class="text-rose-400 font-bold">100+ Detected</span>
+                            </div>
+                            <div>
+                                <span class="text-slate-500 block">CI/CD Pipeline:</span>
+                                <span class="text-cyan-400 font-bold">Jenkins + Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 font-mono text-[11px] mb-4">
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">Flask</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">MongoDB</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">Docker</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">Jenkins</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">TCP/HTTP</span>
+                        </div>
+                        <button class="open-project-modal w-full py-2.5 rounded-xl bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-900/40 hover:border-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-2 transition-all" data-project="vulnerability-scanner">
+                            <span>🔍</span> <span>Inspect Architecture & Details</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2: Keyword-Driven Playwright Framework -->
+                <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between tilt-card border border-white/5 hover:border-emerald-500/40" data-category="automation">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-emerald-950/60 text-emerald-300 border border-emerald-500/30">
+                                🤖 QA / Test Automation
+                            </span>
+                            <div class="flex items-center gap-2">
+                                <a href="https://github.com/jagannathbehera312" target="_blank" title="GitHub Source" class="p-2 rounded-lg bg-slate-900 text-slate-400 hover:text-emerald-300 transition-colors">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-2">Enterprise Playwright Suite</h3>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                            Scalable keyword-driven multi-browser automation framework designed with Python & Playwright. Decouples business test cases from DOM selectors, auto-heals dynamic elements, and integrates into Jenkins regression pipelines.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-slate-900/80 border border-slate-800/80 mb-4 text-xs font-mono">
+                            <div>
+                                <span class="text-slate-500 block">Execution Speed:</span>
+                                <span class="text-emerald-400 font-bold">+40% Accelerated</span>
+                            </div>
+                            <div>
+                                <span class="text-slate-500 block">Browsers:</span>
+                                <span class="text-cyan-400 font-bold">Chromium / FF / WebKit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 font-mono text-[11px] mb-4">
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-emerald-300 border border-slate-800">Playwright</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-emerald-300 border border-slate-800">Python</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-emerald-300 border border-slate-800">Pytest</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-emerald-300 border border-slate-800">Allure Reports</span>
+                        </div>
+                        <button class="open-project-modal w-full py-2.5 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 hover:bg-emerald-900/40 hover:border-emerald-400 font-mono text-xs font-semibold flex items-center justify-center gap-2 transition-all" data-project="playwright-framework">
+                            <span>🔍</span> <span>Inspect Architecture & Details</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3: High-Throughput Flask & Mongo Gateway -->
+                <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between tilt-card border border-white/5 hover:border-purple-500/40" data-category="backend">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-purple-950/60 text-purple-300 border border-purple-500/30">
+                                ⚡ Distributed Backend
+                            </span>
+                            <div class="flex items-center gap-2">
+                                <a href="https://github.com/jagannathbehera312" target="_blank" title="GitHub Source" class="p-2 rounded-lg bg-slate-900 text-slate-400 hover:text-purple-300 transition-colors">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-2">Flask Microservices & Elasticsearch</h3>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                            High-concurrency Flask backend servicing 10,000+ daily production requests. Implemented Elasticsearch inverted indexing to slash query response times by 30%, with SonarQube automated quality gates in Jenkins.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-slate-900/80 border border-slate-800/80 mb-4 text-xs font-mono">
+                            <div>
+                                <span class="text-slate-500 block">Daily Throughput:</span>
+                                <span class="text-purple-400 font-bold">10K+ Req/Day</span>
+                            </div>
+                            <div>
+                                <span class="text-slate-500 block">Quality Score:</span>
+                                <span class="text-emerald-400 font-bold">+25% SonarQube</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 font-mono text-[11px] mb-4">
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-purple-300 border border-slate-800">Flask</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-purple-300 border border-slate-800">MongoDB</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-purple-300 border border-slate-800">Elasticsearch</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-purple-300 border border-slate-800">SonarQube</span>
+                        </div>
+                        <button class="open-project-modal w-full py-2.5 rounded-xl bg-purple-950/40 border border-purple-500/30 text-purple-300 hover:bg-purple-900/40 hover:border-purple-400 font-mono text-xs font-semibold flex items-center justify-center gap-2 transition-all" data-project="flask-mongodb-gateway">
+                            <span>🔍</span> <span>Inspect Architecture & Details</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 4: E-Library For Engineers -->
+                <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between tilt-card border border-white/5 hover:border-amber-500/40" data-category="mobile">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-amber-950/60 text-amber-300 border border-amber-500/30">
+                                📱 Mobile Systems / Android
+                            </span>
+                            <div class="flex items-center gap-2">
+                                <a href="https://github.com/jagannathbehera312" target="_blank" title="GitHub Source" class="p-2 rounded-lg bg-slate-900 text-slate-400 hover:text-amber-300 transition-colors">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-2">E-Library For Engineers</h3>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                            Developed a native Android app offering curated study materials, textbooks, and syllabus notes for engineering undergraduates. Integrated Firebase Realtime DB and Custom Tabs, reducing PDF fetch latency by 40%.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-slate-900/80 border border-slate-800/80 mb-4 text-xs font-mono">
+                            <div>
+                                <span class="text-slate-500 block">Access Speed:</span>
+                                <span class="text-amber-400 font-bold">-40% Latency</span>
+                            </div>
+                            <div>
+                                <span class="text-slate-500 block">Audience:</span>
+                                <span class="text-cyan-400 font-bold">B.Tech Undergrads</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 font-mono text-[11px] mb-4">
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-amber-300 border border-slate-800">Java</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-amber-300 border border-slate-800">XML</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-amber-300 border border-slate-800">Firebase</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-amber-300 border border-slate-800">Chrome Tabs</span>
+                        </div>
+                        <button class="open-project-modal w-full py-2.5 rounded-xl bg-amber-950/40 border border-amber-500/30 text-amber-300 hover:bg-amber-900/40 hover:border-amber-400 font-mono text-xs font-semibold flex items-center justify-center gap-2 transition-all" data-project="elibrary-android">
+                            <span>🔍</span> <span>Inspect Architecture & Details</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS MATRIX -->
+        <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="text-center mb-14">
+                <span class="text-emerald-400 font-mono text-xs uppercase tracking-widest">[ 06. TECH CAPABILITIES ]</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Technical Skills & Ecosystem</h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Category 1: Edge, Servers & Networking -->
+                <div class="glass-panel p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">🌐</span>
+                        <h3 class="text-lg font-bold text-white">Edge Servers & Networking</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-cyan-300 text-xs font-mono">Edge Servers</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-cyan-300 text-xs font-mono">Networking (TCP/IP)</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-cyan-300 text-xs font-mono">HTTP/2 & HTTPS</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-cyan-300 text-xs font-mono">DNS Resolution</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-cyan-300 text-xs font-mono">CDN Architecture</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-cyan-300 text-xs font-mono">Proxy Routing</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-cyan-300 text-xs font-mono">Linux Server Admin</span>
+                    </div>
+                </div>
+
+                <!-- Category 2: Test Automation & QA -->
+                <div class="glass-panel p-6 rounded-2xl border border-emerald-500/20 hover:border-emerald-500/40">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">🧪</span>
+                        <h3 class="text-lg font-bold text-white">Test Automation & QA</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-emerald-300 text-xs font-mono">Pytest</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-emerald-300 text-xs font-mono">Python Scripting</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-emerald-300 text-xs font-mono">Playwright</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-emerald-300 text-xs font-mono">Cypress</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-emerald-300 text-xs font-mono">Appium</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-emerald-300 text-xs font-mono">JMeter</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-emerald-300 text-xs font-mono">Postman</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-emerald-300 text-xs font-mono">Keyword-Driven Testing</span>
+                    </div>
+                </div>
+
+                <!-- Category 3: Version Control, DevOps & Tools -->
+                <div class="glass-panel p-6 rounded-2xl border border-purple-500/20 hover:border-purple-500/40">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">⚙️</span>
+                        <h3 class="text-lg font-bold text-white">Version Control & Tooling</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-purple-300 text-xs font-mono">Perforce (P4)</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-purple-300 text-xs font-mono">Git / GitHub</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-purple-300 text-xs font-mono">Internal Tools Dev</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-purple-300 text-xs font-mono">Docker</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-purple-300 text-xs font-mono">Jenkins CI/CD</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-purple-300 text-xs font-mono">SonarQube</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-purple-300 text-xs font-mono">Elasticsearch</span>
+                    </div>
+                </div>
+
+                <!-- Category 4: Languages & Backend -->
+                <div class="glass-panel p-6 rounded-2xl border border-amber-500/20 hover:border-amber-500/40">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">💻</span>
+                        <h3 class="text-lg font-bold text-white">Languages & Backend</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-amber-300 text-xs font-mono">Python (Scripting & APIs)</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-amber-300 text-xs font-mono">Flask</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-amber-300 text-xs font-mono">Java</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-amber-300 text-xs font-mono">C / C++</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-amber-300 text-xs font-mono">SQL</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-amber-300 text-xs font-mono">PHP</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-amber-300 text-xs font-mono">RESTful APIs</span>
+                    </div>
+                </div>
+
+                <!-- Category 5: Databases & Storage -->
+                <div class="glass-panel p-6 rounded-2xl border border-blue-500/20 hover:border-blue-500/40">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">🗄️</span>
+                        <h3 class="text-lg font-bold text-white">Databases & Platforms</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-blue-300 text-xs font-mono">MongoDB</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-blue-300 text-xs font-mono">MySQL</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-blue-300 text-xs font-mono">Firebase</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-blue-300 text-xs font-mono">Linux / Ubuntu</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-blue-300 text-xs font-mono">Unix Shell</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-blue-300 text-xs font-mono">Windows</span>
+                    </div>
+                </div>
+
+                <!-- Category 6: Spoken Languages & Methodologies -->
+                <div class="glass-panel p-6 rounded-2xl border border-rose-500/20 hover:border-rose-500/40">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">🌐</span>
+                        <h3 class="text-lg font-bold text-white">Languages & Agile</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-rose-300 text-xs font-mono">English (Professional)</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-rose-300 text-xs font-mono">Hindi</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-rose-300 text-xs font-mono">Odia</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-rose-300 text-xs font-mono">Agile / Scrum</span>
+                        <span class="skill-pill px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-rose-300 text-xs font-mono">Test Plans & Strategy</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EDUCATION & CODING PROFILES -->
+        <section id="education" class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-amber-400 font-mono text-xs uppercase tracking-widest">[ 07. ALMA MATER & PROFILES ]</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Education & Coding Footprint</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+                <!-- NIT Rourkela Card -->
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-amber-500/30 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-mono bg-amber-950/70 text-amber-300 border border-amber-500/40">
+                                Graduated June 2023
+                            </span>
+                            <span class="text-xs font-mono text-slate-400">Rourkela, Odisha</span>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-white mb-1">NIT Rourkela</h3>
+                        <p class="text-sm font-mono text-amber-300 font-semibold mb-3">National Institute of Technology Rourkela</p>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                            Bachelor of Technology (B.Tech) in <strong class="text-white">Computer Science and Engineering</strong>.
+                            Comprehensive foundational coursework in Algorithms, Operating Systems, Database Management Systems, Computer Networks, and Object-Oriented Software Engineering.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between font-mono text-xs">
+                        <span class="text-slate-400">Graduating Grade:</span>
+                        <span class="text-emerald-400 font-bold text-sm">7.05 CGPA</span>
+                    </div>
+                </div>
+
+                <!-- Coding Profiles Hub -->
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Profiles & Repositories</h3>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed mb-6">
+                            Connect and inspect live problem-solving records, code contributions, and project repositories:
+                        </p>
+                        <div class="space-y-3 font-mono text-xs">
+                            <a href="https://in.linkedin.com/in/jagannath-behera-5b4042196" target="_blank" class="flex items-center justify-between gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/40 text-slate-300 hover:text-cyan-300 transition-all">
+                                <span class="flex items-center gap-2 shrink-0"><span>💼</span> LinkedIn Profile</span>
+                                <span class="text-cyan-400 truncate">jagannath-behera ↗</span>
+                            </a>
+                            <a href="https://github.com/jagannathbehera312" target="_blank" class="flex items-center justify-between gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-purple-500/40 text-slate-300 hover:text-purple-300 transition-all">
+                                <span class="flex items-center gap-2 shrink-0"><span>🐙</span> GitHub Repos</span>
+                                <span class="text-purple-400 truncate">jagannathbehera312 ↗</span>
+                            </a>
+                            <a href="https://leetcode.com/u/Jagannath444/" target="_blank" class="flex items-center justify-between gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 text-slate-300 hover:text-amber-300 transition-all">
+                                <span class="flex items-center gap-2 shrink-0"><span>⚡</span> LeetCode</span>
+                                <span class="text-amber-400 truncate">Jagannath444 ↗</span>
+                            </a>
+                            <a href="https://www.geeksforgeeks.org/profile/jagannathbehera312" target="_blank" class="flex items-center justify-between gap-3 p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-500/40 text-slate-300 hover:text-emerald-300 transition-all">
+                                <span class="flex items-center gap-2 shrink-0"><span>🟢</span> GeeksforGeeks (GFG)</span>
+                                <span class="text-emerald-400 truncate">jagannathbehera312 ↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <div class="text-center mb-14">
+                <span class="text-cyan-400 font-mono text-xs uppercase tracking-widest">[ 08. INITIATE CONTACT ]</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">Let's Build Something High-Performance</h2>
+                <p class="text-slate-400 text-xs sm:text-sm max-w-md mx-auto mt-2">
+                    Available for SDE-1, SDET, and Backend Engineering positions. Feel free to copy my direct contact details or send a message.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                <!-- Contact Cards (2 cols) -->
+                <div class="md:col-span-2 space-y-4">
+                    <!-- Email Card -->
+                    <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-cyan-500/40 transition-all">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-mono text-cyan-400 font-semibold">EMAIL</span>
+                            <button class="copy-trigger text-xs font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-300" data-copy="jagannathbehera312@gmail.com" data-label="Email">
+                                Copy 📋
+                            </button>
+                        </div>
+                        <a href="mailto:jagannathbehera312@gmail.com" class="font-mono text-xs sm:text-sm text-slate-200 hover:text-cyan-300 block truncate">
+                            jagannathbehera312@gmail.com
+                        </a>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-emerald-500/40 transition-all">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-mono text-emerald-400 font-semibold">PHONE</span>
+                            <button class="copy-trigger text-xs font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400 hover:text-emerald-300" data-copy="+916372939199" data-label="Phone">
+                                Copy 📋
+                            </button>
+                        </div>
+                        <a href="tel:+916372939199" class="font-mono text-xs sm:text-sm text-slate-200 hover:text-emerald-300 block">
+                            +91 6372939199
+                        </a>
+                    </div>
+
+                    <!-- Location Card -->
+                    <div class="glass-panel p-5 rounded-2xl border border-white/5">
+                        <span class="text-xs font-mono text-purple-400 font-semibold block mb-1">LOCATION & RELOCATION</span>
+                        <p class="font-mono text-xs text-slate-300">
+                            Bangalore / Odisha, India<br>
+                            <span class="text-emerald-400">Open to Relocation & Remote</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form (3 cols) -->
+                <div class="md:col-span-3">
+                    <form id="contact-form" class="glass-panel p-6 sm:p-8 rounded-2xl border border-white/5 space-y-4">
+                        <div>
+                            <label class="block text-xs font-mono text-slate-400 mb-1.5" for="sender-name">YOUR NAME / RECRUITER</label>
+                            <input type="text" id="sender-name" required placeholder="e.g. Alex (Engineering Manager)" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs sm:text-sm text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 font-mono">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-mono text-slate-400 mb-1.5" for="sender-email">YOUR WORK EMAIL</label>
+                            <input type="email" id="sender-email" required placeholder="alex@company.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs sm:text-sm text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 font-mono">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-mono text-slate-400 mb-1.5" for="sender-message">OPPORTUNITY / MESSAGE</label>
+                            <textarea id="sender-message" rows="4" required placeholder="Hi Jagannath, we came across your backend & Playwright automation work and would love to chat..." class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs sm:text-sm text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 font-mono resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="btn-neon-cyan w-full py-3 rounded-xl font-mono text-xs sm:text-sm font-bold flex items-center justify-center gap-2">
+                            <span>🚀</span> <span>Send Priority Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PROJECT DETAILS MODAL -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div id="modal-content" class="bg-[#0a0e17] border border-cyan-500/30 rounded-2xl max-w-2xl w-full p-6 sm:p-8 max-h-[90vh] overflow-y-auto relative shadow-2xl">
+            <!-- Close Button -->
+            <button id="modal-close" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono">
+                ESC ✕
+            </button>
+
+            <!-- Header -->
+            <span id="modal-badge" class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-cyan-950/70 text-cyan-300 border border-cyan-500/30 inline-block mb-3"></span>
+            <h3 id="modal-title" class="text-2xl font-bold text-white mb-3"></h3>
+            <p id="modal-desc" class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6"></p>
+
+            <!-- Metrics -->
+            <div id="modal-stats" class="grid grid-cols-3 gap-3 mb-6"></div>
+
+            <!-- Architectural Wins -->
+            <div class="mb-6">
+                <h4 class="text-xs font-mono text-cyan-400 uppercase tracking-wider mb-2 font-bold">Key Architectural Highlights:</h4>
+                <ul id="modal-features" class="space-y-2"></ul>
+            </div>
+
+            <!-- Footer links -->
+            <div class="pt-5 border-t border-slate-800 flex items-center justify-between">
+                <a id="modal-github-link" href="#" target="_blank" class="btn-neon-cyan px-4 py-2 rounded-xl text-xs font-mono font-semibold flex items-center gap-2">
+                    <span>🐙</span> <span>View GitHub Repository</span>
+                </a>
+                <span class="text-xs font-mono text-slate-500">Press ESC to dismiss</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/5 py-10 px-4 sm:px-6 lg:px-8 text-center text-xs font-mono text-slate-500 bg-[#06080e]">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 <span class="text-slate-300 font-semibold">Jagannath Behera</span>. Engineered with high-precision UI/UX & Web Standards.
+            </div>
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#hero" class="hover:text-cyan-400">Back to Top ↑</a>
+                <span>•</span>
+                <a href="https://github.com/jagannathbehera312" target="_blank" class="hover:text-cyan-400">GitHub</a>
+                <span>•</span>
+                <a href="https://in.linkedin.com/in/jagannath-behera-5b4042196" target="_blank" class="hover:text-cyan-400">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/sound.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/test-runner.js"></script>
+    <script src="js/terminal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
