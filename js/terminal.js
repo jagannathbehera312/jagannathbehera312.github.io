@@ -240,8 +240,12 @@ class TerminalEmulator {
             <p class="text-cyan-400 font-bold">Featured Projects:</p>
             <div class="space-y-2 text-xs">
                 <div class="border-l-2 border-cyan-400 pl-2">
-                    <span class="text-white font-semibold">1. Vulnerability Scanner</span> (Flask, Bootstrap, MongoDB, Docker, Jenkins)
-                    <p class="text-slate-400">Scans target IPs for open ports/services, validates TCP/HTTP protocols, flagged 100+ critical CVEs with automated CI/CD pipeline.</p>
+                    <span class="text-white font-semibold">1. SecureAudit Pro – Enterprise VAPT & SOC Platform</span> (React, TypeScript, DRF, Celery, Redis, OWASP ZAP, Bandit SAST)
+                    <p class="text-slate-400">Enterprise VAPT platform with real-time SOC dashboard, live attack radar, multi-engine async scanning (ZAP, Nuclei), dynamic risk scoring, and automated DevSecOps CI/CD pipeline.</p>
+                    <div class="flex gap-3 mt-1 text-[11px]">
+                        <span>⚡ <a href="http://140.245.14.175:8081/" target="_blank" class="underline text-emerald-400 font-semibold">Live App (140.245.14.175:8081) ↗</a></span>
+                        <span>🐙 <a href="https://github.com/jagannathbehera312/secureaudit-pro" target="_blank" class="underline text-cyan-300 font-semibold">GitHub Source ↗</a></span>
+                    </div>
                 </div>
                 <div class="border-l-2 border-emerald-400 pl-2">
                     <span class="text-white font-semibold">2. Enterprise Playwright Test Suite</span> (Python, Playwright, Allure, Jenkins)

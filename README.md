@@ -17,6 +17,9 @@ Built with modern web standards, interactive Canvas 3D particle physics, an inte
   - **LeetCode**: [leetcode.com/u/Jagannath444/](https://leetcode.com/u/Jagannath444/)
   - **GeeksforGeeks**: [geeksforgeeks.org/profile/jagannathbehera312](https://www.geeksforgeeks.org/profile/jagannathbehera312)
   - **GitHub**: [github.com/jagannathbehera312](https://github.com/jagannathbehera312)
+- **Featured Project**: **SecureAudit Pro – Enterprise VAPT & SOC Platform**
+  - **Live Website**: [http://140.245.14.175:8081/](http://140.245.14.175:8081/)
+  - **Git Repository**: [github.com/jagannathbehera312/secureaudit-pro](https://github.com/jagannathbehera312/secureaudit-pro)
 - **Core Competencies**:
   - **Edge & Networking**: Distributed Edge Servers, TCP/IP, HTTP/2, HTTPS, DNS Resolution, CDN Architecture, Proxy Routing.
   - **Test Automation & Scripting**: Advanced Python Scripting, Pytest, Playwright, Cypress, Appium, JMeter, Keyword-Driven Testing.
@@ -30,14 +33,14 @@ Built with modern web standards, interactive Canvas 3D particle physics, an inte
 1. **Interactive Constellation Canvas**:
    - Real-time animated canvas mesh with cursor attraction, dynamic repulsion physics, and high-DPI scaling.
 2. **Live Akamai Edge & Pytest Automation Lab**:
-   - Visual test execution dashboard simulating headless test suites (Akamai edge network latency check, Playwright Auth, Flask 10k QPS load benchmark, SonarQube quality gates >95%, and network port scanner).
+   - Visual test execution dashboard simulating headless test suites (Akamai edge network latency check, Playwright Auth, Flask 10k QPS load benchmark, SonarQube quality gates >95%, and SecureAudit Pro VAPT pipeline).
 3. **Interactive Developer CLI Terminal (`jagan@portfolio:~$`)**:
    - Supports commands: `help`, `about`, `skills`, `experience`, `projects`, `test`, `contact`, `social`, `education`, `clear`, and `sudo hire`.
    - Keyboard history (Up/Down arrow keys) and Tab auto-complete.
 4. **Web Audio Synthesizer (Zero MP3 Dependencies)**:
    - Built-in sound effects generator using HTML5 Web Audio API for tactile clicks, keystrokes, and test passing chimes (Muted by default for polite UX).
 5. **Project Architecture Deep-Dive Modals**:
-   - Interactive modals showcasing key architecture decisions, metrics, and CVE statistics for projects like the Vulnerability Scanner, Playwright Automation Engine, and Flask APIs.
+   - Interactive modals showcasing key architecture decisions, metrics, and DevSecOps pipelines for projects like SecureAudit Pro (Enterprise VAPT & SOC), Playwright Automation Engine, and Flask APIs.
 6. **Career Timeline & Stats Counters**:
    - Animated count-up metrics for 3.2+ Years experience, 10K+ Daily Requests, 30% Latency Reduction, and 95%+ Automation Coverage.
 7. **One-Click Quick Copy & Toast Feedback**:

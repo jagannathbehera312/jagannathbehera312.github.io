@@ -38,11 +38,11 @@ class TestRunner {
                 logs: 'SonarQube analysis: 0 blocker bugs, 0 security vulnerabilities, code coverage at 96.8% (Gate: Passed).'
             },
             {
-                name: 'test_vulnerability_scanner_tcp_ports()',
-                suite: 'Security & Protocol Validation',
+                name: 'test_secureaudit_pro_vapt_pipeline()',
+                suite: 'DevSecOps & Multi-Engine VAPT',
                 duration: 32,
-                assertions: 10,
-                logs: 'Scanned port ranges 80, 443, 8080, 27017 -> TCP handshake validated -> Protocol sanitization filter applied.'
+                assertions: 16,
+                logs: 'Triggered Celery async pipeline -> OWASP ZAP & Nuclei dispatched -> Bandit SAST zero critical CVEs -> SSRF boundary verified.'
             }
         ];
 

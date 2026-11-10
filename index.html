@@ -553,47 +553,54 @@
             <!-- Projects Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                <!-- Project 1: Vulnerability Scanner -->
+                <!-- Project 1: SecureAudit Pro -->
                 <div class="project-card glass-panel rounded-2xl p-6 flex flex-col justify-between tilt-card border border-white/5 hover:border-cyan-500/40" data-category="backend security">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="px-2.5 py-1 rounded-md text-[11px] font-mono font-semibold bg-rose-950/60 text-rose-300 border border-rose-500/30">
-                                🛡️ Security / DevOps
+                                🛡️ DevSecOps / VAPT / SOC
                             </span>
                             <div class="flex items-center gap-2">
-                                <a href="https://github.com/jagannathbehera312" target="_blank" title="GitHub Source" class="p-2 rounded-lg bg-slate-900 text-slate-400 hover:text-cyan-300 transition-colors">
+                                <a href="http://140.245.14.175:8081/" target="_blank" title="Live Website / SOC Platform" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 hover:bg-emerald-900/60 transition-colors text-[11px] font-mono">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                    <span>Live SOC App ↗</span>
+                                </a>
+                                <a href="https://github.com/jagannathbehera312/secureaudit-pro" target="_blank" title="GitHub Source" class="p-2 rounded-lg bg-slate-900 text-slate-400 hover:text-cyan-300 transition-colors">
                                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                                 </a>
                             </div>
                         </div>
 
-                        <h3 class="text-xl font-bold text-white mb-2">Automated Vulnerability Scanner</h3>
+                        <h3 class="text-xl font-bold text-white mb-2">SecureAudit Pro – Enterprise VAPT & SOC</h3>
                         <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
-                            Built an automated port & network vulnerability scanner using Python Flask and MongoDB. Containerized with Docker for reproducible VPS staging and integrated Jenkins CI/CD for continuous protocol validation.
+                            Enterprise VAPT and automated SOC platform built with React, TypeScript, and Django REST Framework. Orchestrates asynchronous multi-engine security scans (OWASP ZAP, Nuclei, Celery, Redis) with real-time SOC attack radar and automated DevSecOps CI/CD gates.
                         </p>
 
                         <!-- Key Metrics Ribbon -->
                         <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-slate-900/80 border border-slate-800/80 mb-4 text-xs font-mono">
                             <div>
-                                <span class="text-slate-500 block">Vulnerabilities:</span>
-                                <span class="text-rose-400 font-bold">100+ Detected</span>
+                                <span class="text-slate-500 block">Scan Pipeline:</span>
+                                <span class="text-rose-400 font-bold">OWASP ZAP + Nuclei</span>
                             </div>
                             <div>
-                                <span class="text-slate-500 block">CI/CD Pipeline:</span>
-                                <span class="text-cyan-400 font-bold">Jenkins + Docker</span>
+                                <span class="text-slate-500 block">DevSecOps CI/CD:</span>
+                                <span class="text-cyan-400 font-bold">Bandit SAST + Celery</span>
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div class="flex flex-wrap gap-1.5 font-mono text-[11px] mb-4">
-                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">Flask</span>
-                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">MongoDB</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">React</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">TypeScript</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">Django REST</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">Celery/Redis</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">OWASP ZAP</span>
+                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">Bandit SAST</span>
                             <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">Docker</span>
                             <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">Jenkins</span>
-                            <span class="px-2 py-0.5 rounded bg-slate-900 text-cyan-300 border border-slate-800">TCP/HTTP</span>
                         </div>
-                        <button class="open-project-modal w-full py-2.5 rounded-xl bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-900/40 hover:border-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-2 transition-all" data-project="vulnerability-scanner">
+                        <button class="open-project-modal w-full py-2.5 rounded-xl bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-900/40 hover:border-cyan-400 font-mono text-xs font-semibold flex items-center justify-center gap-2 transition-all" data-project="secureaudit-pro">
                             <span>🔍</span> <span>Inspect Architecture & Details</span>
                         </button>
                     </div>
@@ -1004,10 +1011,15 @@
             </div>
 
             <!-- Footer links -->
-            <div class="pt-5 border-t border-slate-800 flex items-center justify-between">
-                <a id="modal-github-link" href="#" target="_blank" class="btn-neon-cyan px-4 py-2 rounded-xl text-xs font-mono font-semibold flex items-center gap-2">
-                    <span>🐙</span> <span>View GitHub Repository</span>
-                </a>
+            <div class="pt-5 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3">
+                <div class="flex items-center gap-3">
+                    <a id="modal-demo-link" href="#" target="_blank" class="btn-neon-emerald px-4 py-2 rounded-xl text-xs font-mono font-semibold flex items-center gap-2">
+                        <span>⚡</span> <span>Open Live Website</span>
+                    </a>
+                    <a id="modal-github-link" href="#" target="_blank" class="btn-neon-cyan px-4 py-2 rounded-xl text-xs font-mono font-semibold flex items-center gap-2">
+                        <span>🐙</span> <span>View GitHub Repository</span>
+                    </a>
+                </div>
                 <span class="text-xs font-mono text-slate-500">Press ESC to dismiss</span>
             </div>
         </div>

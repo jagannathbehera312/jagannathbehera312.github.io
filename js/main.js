@@ -144,23 +144,23 @@ function initProjectFilters() {
 
 // 4. Project Details Modal (Architecture deep-dive)
 const projectData = {
-    'vulnerability-scanner': {
-        title: 'Network & Port Vulnerability Scanner',
-        badge: 'Backend / Security / DevOps',
-        description: 'Engineered a full-featured automated vulnerability detection system with Python Flask, Bootstrap, and MongoDB. Containerized with Docker for predictable CI/CD VPS deployments using automated Jenkins pipelines.',
+    'secureaudit-pro': {
+        title: 'SecureAudit Pro – Enterprise VAPT & SOC Platform',
+        badge: 'DevSecOps / Enterprise VAPT / SOC',
+        description: 'Enterprise-grade VAPT and automated SOC platform built with React, TypeScript, and Django REST Framework. Orchestrates multi-engine asynchronous security pipelines (OWASP ZAP, Nuclei, Celery, Redis) with real-time SOC monitoring, custom SSRF boundary protection, and automated DevSecOps CI/CD gates.',
         stats: [
-            { label: 'CVEs Detected', val: '100+ Critical' },
-            { label: 'Protocols Validated', val: 'TCP / HTTP / SSL' },
-            { label: 'Deployment', val: 'Docker + Jenkins CI' }
+            { label: 'Scanning Engines', val: 'ZAP + Nuclei' },
+            { label: 'Task Pipeline', val: 'Celery + Redis' },
+            { label: 'Quality Gates', val: 'Bandit SAST + CI' }
         ],
         features: [
-            'Automated asynchronous IP and open-port scanning with multi-socket discovery.',
-            'Network protocol validation inspecting service signatures and misconfigured headers.',
-            'Persistent MongoDB storage indexing scan reports with historical vulnerability trends.',
-            'Continuous Jenkins integration pipeline running regression vulnerability checks on commits.'
+            'Full-Stack Security Operations: Built an enterprise VAPT platform (React, TypeScript, DRF) with a real-time SOC dashboard, live attack radar, remediation tracking, compliance reporting, and JWT/TOTP 2FA security.',
+            'Multi-Engine Scanning Pipeline: Orchestrated asynchronous security scans using Celery, Redis, OWASP ZAP, and Nuclei, featuring custom SSRF boundary protections, finding deduplication, and dynamic risk-scoring.',
+            'DevSecOps & CI/CD Automation: Designed a Jenkins declarative pipeline featuring GitHub webhook triggers, automated quality gates (Flake8, Bandit SAST, Pytest), and zero-downtime Docker deployments.',
+            'Data Persistence & Compliance: MongoDB collection indexing for persistent scan reports, historical vulnerability audits, and automated SOC regulatory compliance tracking.'
         ],
-        github: 'https://github.com/jagannathbehera312',
-        demo: '#'
+        github: 'https://github.com/jagannathbehera312/secureaudit-pro',
+        demo: 'http://140.245.14.175:8081/'
     },
     'playwright-framework': {
         title: 'Keyword-Driven Playwright Automation Suite',
@@ -262,6 +262,16 @@ function initProjectModals() {
             });
 
             document.getElementById('modal-github-link').href = data.github;
+
+            const demoLink = document.getElementById('modal-demo-link');
+            if (demoLink) {
+                if (data.demo && data.demo !== '#') {
+                    demoLink.href = data.demo;
+                    demoLink.style.display = 'inline-flex';
+                } else {
+                    demoLink.style.display = 'none';
+                }
+            }
 
             modal.classList.remove('hidden');
             modal.classList.add('flex');
